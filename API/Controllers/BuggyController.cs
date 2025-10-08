@@ -27,5 +27,11 @@ namespace API.Controllers
         {
             return Unauthorized();
         }
+
+        [HttpGet("hello")]
+        public ActionResult<string> GetHello()
+        {
+            return Ok("hello");
+        }
     }
 }
